@@ -344,6 +344,17 @@
   
 
   
+<script>
+NexT.utils.loadComments('#valine-comments', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', () => {
+    new Valine(Object.assign({
+      el  : '#valine-comments',
+      path: location.pathname,
+    }, {"enable":true,"appId":"tttnvFXVGb3pgCTKVHD2JkNM-MdYXbMMI","appKey":"iW518mGeGshpUdTjT7lQilA8","placeholder":"留句评论再走呀><","avatar":"mm","meta":[],"pageSize":10,"language":"en, zh-cn","visitor":true,"comment_count":true,"recordIP":false,"serverURLs":null,"enableQQ":false,"requiredFields":[]}
+    ));
+  }, window.Valine);
+});
+</script>
 
 </body>
 </html>
